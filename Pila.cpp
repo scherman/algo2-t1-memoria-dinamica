@@ -9,6 +9,12 @@ Pila::Pila() {
 }
 
 Pila::~Pila() {
+    Nodo* actual = this->prim;
+    while (actual != NULL) {
+        Nodo* siguiente = actual->sig;
+        delete actual;
+        actual = siguiente;
+    }
 }
 
 void Pila::vacia() {
@@ -47,12 +53,17 @@ Nat Pila::tamanio() const {
 }
 
 Pila &Pila::operator=(const Pila &aCopiar) {
-    Pila pila;
-    if (aCopiar.prim == NULL) return pila;
+    if (aCopiar.prim == NULL) return *this;
+
+    // Copio todo en una pila auxiliar, porque de entrada me quedan al revez los elementos
+    Pila temp;
     for (Nodo* actual = aCopiar.prim; actual != NULL; actual = actual->sig) {
-        pila.apilar(actual->elem);
+        temp.apilar(actual->elem);
     }
-    return pila;
+
+    // Voy apilando los nuevos nodos a la nueva pila, en efecto los invierte
+    while (temp.tamanio() > 0) this->apilar(temp.desapilar());
+    return *this;
 }
 
 void Pila::mostrar(ostream &os) const {

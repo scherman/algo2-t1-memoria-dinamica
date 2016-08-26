@@ -50,7 +50,6 @@ void test_asignacion() {
 
     Pila copia;
     copia = pila;
-    std::cout << "hola";
 //CORREGIR
 //    ASSERT_EQ(pila.tamanio(), copia.tamanio());
 }
