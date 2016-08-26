@@ -50,8 +50,7 @@ void test_asignacion() {
 
     Pila copia;
     copia = pila;
-//CORREGIR
-//    ASSERT_EQ(pila.tamanio(), copia.tamanio());
+    ASSERT(pila.tamanio() == copia.tamanio());
 }
 
 

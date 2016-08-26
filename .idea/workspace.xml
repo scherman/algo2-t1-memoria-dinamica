@@ -65,8 +65,8 @@
           <file leaf-file-name="tests.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="111">
-                  <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+                <state relative-caret-position="320">
+                  <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#17#0" expanded="true" />
                   </folding>
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Pila.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/tests.cpp" />
         <option value="$PROJECT_DIR$/Pila.cpp" />
+        <option value="$PROJECT_DIR$/tests.cpp" />
       </list>
     </option>
   </component>
@@ -374,12 +374,12 @@
       <workItem from="1472086962462" duration="2034000" />
       <workItem from="1472137021998" duration="8785000" />
       <workItem from="1472165161101" duration="1799000" />
-      <workItem from="1472175991895" duration="2377000" />
+      <workItem from="1472175991895" duration="2514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14995000" />
+    <option name="totallyTimeSpent" value="15132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -626,21 +626,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pila.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
