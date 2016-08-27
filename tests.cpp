@@ -24,15 +24,16 @@ void test_mostrar() {
     Pila pila;
     pila.apilar(elemento1());
     pila.apilar(elemento2());
-    std::cout << pila;
+    std::cout << "Deberia tener 2 elementos: " << pila;
 }
 
 void test_tope() {
     Pila p;
     p.apilar(elemento1());
     p.apilar(elemento2());
-    std::cout << "Tope es el elemento 2: " << p.tope();
-//    ASSERT_EQ(elemento1(), p.tope());
+    ASSERT(p.tope().id == elemento2().id);
+    ASSERT(p.tope().nombre == elemento2().nombre);
+    ASSERT(p.tope().descripcion == elemento2().descripcion);
 }
 
 void test_desapilar() {
@@ -41,6 +42,9 @@ void test_desapilar() {
     pila.apilar(elemento2());
     pila.desapilar();
     ASSERT_EQ(pila.tamanio(), 1);
+    ASSERT(pila.tope().id == elemento1().id);
+    ASSERT(pila.tope().nombre == elemento1().nombre);
+    ASSERT(pila.tope().descripcion == elemento1().descripcion);
 }
 
 void test_asignacion() {
@@ -77,7 +81,6 @@ int main() {
     RUN_TEST(test_tope);
     RUN_TEST(test_desapilar);
     RUN_TEST(test_asignacion);
-    // HACER MAS TEST
 
     return 0;
 }

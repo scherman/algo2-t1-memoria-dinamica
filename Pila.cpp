@@ -56,13 +56,13 @@ Pila &Pila::operator=(const Pila &aCopiar) {
     if (aCopiar.prim == NULL) return *this;
 
     // Copio todo en una pila auxiliar, porque de entrada me quedan al revez los elementos
-    Pila temp;
+    Pila aux;
     for (Nodo* actual = aCopiar.prim; actual != NULL; actual = actual->sig) {
-        temp.apilar(actual->elem);
+        aux.apilar(actual->elem);
     }
 
     // Voy apilando los nuevos nodos a la nueva pila, en efecto los invierte
-    while (temp.tamanio() > 0) this->apilar(temp.desapilar());
+    while (aux.tamanio() > 0) this->apilar(aux.desapilar());
     return *this;
 }
 
